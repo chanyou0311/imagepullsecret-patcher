@@ -28,7 +28,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.HARBOR_ADDRESS }}/sandbox/imagepullsecret-patcher
+          images: ${{ secrets.HARBOR_ADDRESS }}/public/imagepullsecret-patcher
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
