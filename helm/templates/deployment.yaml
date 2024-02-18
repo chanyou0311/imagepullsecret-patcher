@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{.Values.applicationName}}
+  labels:
+    name: {{.Values.applicationName}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: {{.Values.applicationName}}
+  template:
+    metadata:
+      labels:
+        name: {{.Values.applicationName}}
+    spec:
+      automountServiceAccountToken: true
+      serviceAccountName: {{.Values.applicationName}}
+      containers:
+        - name: {{.Values.applicationName}}
+          image: "harbor-sub.fumo.jp/public/imagepullsecret-patcher:sha-c40f5e9"
+          env:
+            - name: CONFIG_FORCE
+              value: "true"
+            - name: CONFIG_DEBUG
+              value: "false"
+            - name: CONFIG_ALLSERVICEACCOUNT
+              value: "true"
+            - name: CONFIG_DOCKERCONFIGJSONPATH
+              value: "/app/secrets/.dockerconfigjson"
+          volumeMounts:
+            - name: src-dockerconfigjson
+              mountPath: "/app/secrets"
+              readOnly: true
+          resources:
+            requests:
+              cpu: 0.1
+              memory: 15Mi
+            limits:
+              cpu: 0.2
+              memory: 30Mi
+      volumes:
+        - name: src-dockerconfigjson
+          secret:
+            secretName: {{.Values.applicationName}}
