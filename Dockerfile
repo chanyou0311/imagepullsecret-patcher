@@ -1,6 +1,7 @@
 # build stage
-FROM golang:1.13 as builder
+FROM --platform=$BUILDPLATFORM golang:1.13 as builder
 
+ARG TARGETARCH
 ENV GO111MODULE=on
 
 WORKDIR /app
@@ -12,7 +13,7 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=${TARGETARCH} go build
 
 # final stage
 FROM scratch
