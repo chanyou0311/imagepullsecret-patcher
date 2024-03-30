@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.1...v1.0.2) (2024-03-30)
+
+
+### Bug Fixes
+
+* push image to public project ([76db331](https://github.com/chanyou0311/imagepullsecret-patcher/commit/76db331254d0a40b61e4a6bbf40673af8b5307c4))
+
 ## [1.0.1](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.0...v1.0.1) (2024-03-30)
 
 
