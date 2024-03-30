@@ -1,2 +1,3 @@
 applicationName: imagepullsecret-patcher
 namespace: imagepullsecret-patcher
+tag: latest

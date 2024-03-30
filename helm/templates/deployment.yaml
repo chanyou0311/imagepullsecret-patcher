@@ -18,7 +18,7 @@ spec:
       serviceAccountName: {{.Values.applicationName}}
       containers:
         - name: {{.Values.applicationName}}
-          image: "harbor-sub.fumo.jp/public/imagepullsecret-patcher:sha-c40f5e9"
+          image: "harbor.fumo.jp/sandbox/imagepullsecret-patcher:{{.Values.tag}}"
           env:
             - name: CONFIG_FORCE
               value: "true"
