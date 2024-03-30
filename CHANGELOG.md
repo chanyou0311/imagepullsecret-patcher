@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.2...v1.0.3) (2024-03-30)
+
+
+### Bug Fixes
+
+* Update docker-build-and-push-workflow to use main branch ([a05e39a](https://github.com/chanyou0311/imagepullsecret-patcher/commit/a05e39a9f808e0c0d1a3858250f67c8ebc98bbd7))
+
 ## [1.0.2](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.1...v1.0.2) (2024-03-30)
 
 
