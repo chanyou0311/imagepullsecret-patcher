@@ -43,5 +43,3 @@ spec:
         - name: src-dockerconfigjson
           secret:
             secretName: {{.Values.applicationName}}
-      imagePullSecrets:
-        - name: imagepullsecret-patcher
