@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.2...imagepullsecret-patcher-v1.0.3) (2024-03-30)
+
+
+### Bug Fixes
+
+* Update image repository in deployment.yaml ([459f3b5](https://github.com/chanyou0311/imagepullsecret-patcher/commit/459f3b5273a95d83ded148ec4e6e0804467d2655))
+
 ## [1.0.2](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.1...imagepullsecret-patcher-v1.0.2) (2024-03-30)
 
 
