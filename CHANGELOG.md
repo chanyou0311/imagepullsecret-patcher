@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.0...v1.0.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* conetxt ([17fd921](https://github.com/chanyou0311/imagepullsecret-patcher/commit/17fd921140341fdaebde8b9ec9acaad7a9f9e194))
+
 ## 1.0.0 (2024-03-30)
 
 
