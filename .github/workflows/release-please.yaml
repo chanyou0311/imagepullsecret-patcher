@@ -1,0 +1,35 @@
+name: release-please
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release-please.outputs.release_created }}
+      major: ${{ steps.release-please.outputs.major }}
+      minor: ${{ steps.release-please.outputs.minor }}
+      patch: ${{ steps.release-please.outputs.patch }}
+    steps:
+      - id: release-please
+        uses: google-github-actions/release-please-action@v4
+
+  deploy:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
+    uses: chanyou0311/docker-build-and-push-workflow/.github/workflows/main.yaml@v1.1.3
+    with:
+      IMAGE_PROJECT: sandbox
+      IMAGE_NAME: imagepullsecret-patcher
+      MAJOR: ${{ needs.release-please.outputs.major }}
+      MINOR: ${{ needs.release-please.outputs.minor }}
+      PATCH: ${{ needs.release-please.outputs.patch }}
+    secrets:
+      PASSWORD: ${{ secrets.HARBOR_PASSWORD }}
