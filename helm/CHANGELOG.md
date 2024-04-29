@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.3...imagepullsecret-patcher-v1.0.4) (2024-04-29)
+
+
+### Bug Fixes
+
+* Update secret.yaml ([3fafdac](https://github.com/chanyou0311/imagepullsecret-patcher/commit/3fafdacb16b0f2f32bd9b7ab4996064b5d684af3))
+
 ## [1.0.3](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.2...imagepullsecret-patcher-v1.0.3) (2024-03-30)
 
 
