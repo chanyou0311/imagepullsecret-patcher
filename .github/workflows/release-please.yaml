@@ -19,7 +19,7 @@ jobs:
       patch: ${{ steps.release-please.outputs.patch }}
     steps:
       - id: release-please
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
 
   deploy:
     needs: release-please
