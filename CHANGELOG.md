@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.4...v1.0.5) (2024-07-15)
+
+
+### Bug Fixes
+
+* use googleapis/release-please-action@v4 ([bde76da](https://github.com/chanyou0311/imagepullsecret-patcher/commit/bde76da4bb4300ab6f7fa4ac77d177056869cb1d))
+
 ## [1.0.4](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.3...v1.0.4) (2024-04-29)
 
 
