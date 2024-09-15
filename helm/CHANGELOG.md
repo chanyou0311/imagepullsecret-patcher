@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.8...imagepullsecret-patcher-v1.0.9) (2024-09-15)
+
+
+### Bug Fixes
+
+* Update secret.yaml with new .dockerconfigjson ([436ee9b](https://github.com/chanyou0311/imagepullsecret-patcher/commit/436ee9bb144bb0f5927f6a55118d9c0d2e94916c))
+
 ## [1.0.8](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.7...imagepullsecret-patcher-v1.0.8) (2024-09-15)
 
 
