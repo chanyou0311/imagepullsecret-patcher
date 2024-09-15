@@ -1,5 +1,5 @@
 # build stage
-FROM --platform=$BUILDPLATFORM golang:1.13 as builder
+FROM --platform=$BUILDPLATFORM golang:1.23 AS builder
 
 ARG TARGETARCH
 ENV GO111MODULE=on
@@ -13,10 +13,10 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=${TARGETARCH} go build
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=${TARGETARCH} go build -o /app/imagepullsecret-patcher
 
 # final stage
-FROM scratch
+FROM gcr.io/distroless/static
 
 COPY --from=builder /app/imagepullsecret-patcher /app/
 
