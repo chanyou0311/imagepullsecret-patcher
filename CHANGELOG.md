@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.5...v1.0.6) (2024-09-15)
+
+
+### Bug Fixes
+
+* Update Dockerfile to use golang:1.23 and distroless/static ([5ecef5c](https://github.com/chanyou0311/imagepullsecret-patcher/commit/5ecef5c494049163aadd8276c37e54c7b34bebe6))
+
 ## [1.0.5](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.4...v1.0.5) (2024-07-15)
 
 
