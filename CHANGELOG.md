@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.6...v1.0.7) (2025-02-28)
+
+
+### Bug Fixes
+
+* update Go version in Dockerfile to 1.23.6 ([7f722fd](https://github.com/chanyou0311/imagepullsecret-patcher/commit/7f722fdbbc35fe5e81a960cecda43a4ce6ff0b3b))
+
 ## [1.0.6](https://github.com/chanyou0311/imagepullsecret-patcher/compare/v1.0.5...v1.0.6) (2024-09-15)
 
 
