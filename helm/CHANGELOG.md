@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.13](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.12...imagepullsecret-patcher-v1.0.13) (2025-03-30)
+
+
+### Bug Fixes
+
+* remove deprecated image pull secret template ([e3ec941](https://github.com/chanyou0311/imagepullsecret-patcher/commit/e3ec941ade349d2b78ca363e97bb469d450aa05d))
+
 ## [1.0.12](https://github.com/chanyou0311/imagepullsecret-patcher/compare/imagepullsecret-patcher-v1.0.11...imagepullsecret-patcher-v1.0.12) (2025-02-28)
 
 
